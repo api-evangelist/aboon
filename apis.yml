@@ -1,8 +1,24 @@
 aid: aboon
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aboon.png
 name: Aboon
-description: 'Aboon is a company surfaced as a portfolio company of bain-capital-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Aboon is a digital 401(k) retirement-plan platform and third-party administrator (TPA) that
+  helps financial advisors and employers design, launch, and manage workplace retirement plans. It pairs
+  AI-powered workflows with dedicated human plan consultants to generate customized 401(k) proposals in
+  minutes, streamline recordkeeper onboarding, handle digital plan contracting and census intake, and run
+  ongoing compliance testing and Form 3(16) administration. Aboon markets partnerships with major recordkeepers
+  (American Funds, Empower, John Hancock, and others) and serves a network of advisors nationwide. It is a
+  fintech company backed by Bain Capital Ventures. No public developer/API surface has been identified.'
 url: https://raw.githubusercontent.com/api-evangelist/aboon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,6 +32,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Fintech
+- Retirement
+- 401k
+- Wealth Management
+- Financial Services
+- TPA
+- Recordkeeping
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aboon-domain-security.yml
 - type: Website
   url: https://www.aboon.com/
+- type: SignUp
+  url: https://app.aboon.com/
+- type: Login
+  url: https://app.aboon.com/
+- type: TrustCenter
+  url: https://trust.aboon.com/
+- type: TermsOfService
+  url: https://www.aboon.com/terms
+- type: PrivacyPolicy
+  url: https://www.aboon.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
